@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -98,52 +97,234 @@
     <button onclick="mostrarQuestoes('segurancapublica')">Da Segurança Pública</button>
   </div>
 
-  <div id="temas-penalmilitar" class="temas">
-    <h3>Temas de Direito Penal Militar</h3>
-    <button onclick="mostrarQuestoes('aplicacaolei')">Aplicação da Lei Penal Militar</button>
-    <button onclick="mostrarQuestoes('crime')">Crime</button>
-    <button onclick="mostrarQuestoes('imputabilidade')">Imputabilidade Penal</button>
-    <button onclick="mostrarQuestoes('concursoagentes')">Concurso de Agentes</button>
+  <div id="temas-administrativo" class="temas">
+    <h3>Temas de Direito Administrativo</h3>
+    <button onclick="mostrarQuestoes('organizacaoadministrativa')">Organização Administrativa</button>
+    <button onclick="mostrarQuestoes('administracaodiretaindireta')">Administração Direta e Indireta</button>
+    <button onclick="mostrarQuestoes('principiosadministracao')">Princípios da Administração Pública</button>
+    <button onclick="mostrarQuestoes('agencias')">Agências Executivas e Agências Reguladoras</button>
+    <button onclick="mostrarQuestoes('improbidade')">Lei de Improbidade Administrativa</button>
   </div>
 
-  <section id="aplicacaolei" class="questoes">
-    <div class="questao" data-resposta="b">
-      <h4>1. A Lei Penal Militar aplica-se a:</h4>
-      <label><input type="radio" name="q10" value="a"> Apenas militares da ativa</label>
-      <label><input type="radio" name="q10" value="b"> Militares e civis em determinados casos</label>
-      <label><input type="radio" name="q10" value="c"> Somente em tempos de guerra</label>
-      <label><input type="radio" name="q10" value="d"> Apenas em território estrangeiro</label>
+  <div id="temas-penalmilitar" class="temas">
+    <h3>Temas de Direito Penal Militar</h3>
+    <button onclick="mostrarQuestoes('aplicacaodaleipenalmilitar')">Aplicação da lei penal militar</button>
+    <button onclick="mostrarQuestoes('docrime')">Crime</button>
+    <button onclick="mostrarQuestoes('daimputabilidade')">Imputabilidade Penal</button>
+    <button onclick="mostrarQuestoes('concursodeagentes')">Concurso de agentes</button>
+    <button onclick="mostrarQuestoes('daspenas')">Penas</button>
+    <button onclick="mostrarQuestoes('medidasdeseg')">Medidas de segurança</button>
+    <button onclick="mostrarQuestoes('acaopenal')">Ação Penal</button>
+    <button onclick="mostrarQuestoes('extincaodapunibiidade')"> Extinção da punibilidade</button>
+    <button onclick="mostrarQuestoes('crimesmilitarespaz')"> Crimes militares em tempo de paz</button>
+    <button onclick="mostrarQuestoes('crimespropriamente')">Crimes propriamente militares e crimes 
+      impropriamente militares</button>
+    <button onclick="mostrarQuestoes('crimescontrapessoas')"> Crimes contra a pessoa</button>
+    <button onclick="mostrarQuestoes('crimescontrapatrimonio')">Crimes contra o patrimônio</button>
+    <button onclick="mostrarQuestoes('crimescontraadm')">Crimes contra a administração militar</button>
+    <button onclick="mostrarQuestoes('crimesguerra')">Crimes em tempo de guerra</button>
+    
+    
+  </div>
+
+  <div id="organizacaoadministrativa" class="questoes">
+    <div class="questao" data-resposta="B">
+      <h4>1. Sobre a organização administrativa, é correto afirmar que:</h4>
+      <label><input type="radio" name="q1" value="A"> É composta exclusivamente pela Administração Direta.</label>
+      <label><input type="radio" name="q1" value="B"> Inclui a Administração Direta e a Indireta.</label>
+      <label><input type="radio" name="q1" value="C"> É formada apenas por autarquias e fundações.</label>
+      <label><input type="radio" name="q1" value="D"> É composta exclusivamente por pessoas jurídicas de direito privado.</label>
       <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
     </div>
-    <button class="verificar" onclick="verificarRespostas('aplicacaolei')">Verificar Respostas</button>
-    <div class="resultado" id="resultado-aplicacaolei"></div>
-  </section>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('organizacaoadministrativa')">Verificar todas</button>
+  </div>
 
-  <section id="direitosgarantias" class="questoes">
-    <div class="questao" data-resposta="e">
+  <div id="administracaodiretaindireta" class="questoes">
+    <div class="questao" data-resposta="C">
+      <h4>1. A Administração Indireta é composta por:</h4>
+      <label><input type="radio" name="q2" value="A"> Ministérios e secretarias.</label>
+      <label><input type="radio" name="q2" value="B"> Prefeituras e governos estaduais.</label>
+      <label><input type="radio" name="q2" value="C"> Autarquias, fundações públicas, empresas públicas e sociedades de economia mista.</label>
+      <label><input type="radio" name="q2" value="D"> Órgãos do Poder Legislativo.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('administracaodiretaindireta')">Verificar todas</button>
+  </div>
+
+  <div id="principiosadministracao" class="questoes">
+    <div class="questao" data-resposta="A">
+      <h4>1. Um dos princípios explícitos no caput do artigo 37 da Constituição Federal é:</h4>
+      <label><input type="radio" name="q3" value="A"> Publicidade.</label>
+      <label><input type="radio" name="q3" value="B"> Eficiência apenas.</label>
+      <label><input type="radio" name="q3" value="C"> Moralidade como princípio implícito.</label>
+      <label><input type="radio" name="q3" value="D"> Competência legislativa.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('principiosadministracao')">Verificar todas</button>
+  </div>
+
+  <div id="agencias" class="questoes">
+    <div class="questao" data-resposta="D">
+      <h4>1. As agências reguladoras são caracterizadas por:</h4>
+      <label><input type="radio" name="q4" value="A"> Subordinação direta ao Presidente da República.</label>
+      <label><input type="radio" name="q4" value="B"> Estrutura não-autárquica.</label>
+      <label><input type="radio" name="q4" value="C"> Integrarem a Administração Direta.</label>
+      <label><input type="radio" name="q4" value="D"> Exercício de função normativa e fiscalizadora em setores específicos.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('agencias')">Verificar todas</button>
+  </div>
+
+  <div id="improbidade" class="questoes">
+    <div class="questao" data-resposta="A">
+      <h4>1. Segundo a Lei de Improbidade Administrativa, constitui ato de improbidade administrativa:</h4>
+      <label><input type="radio" name="q5" value="A"> Enriquecimento ilícito no exercício da função pública.</label>
+      <label><input type="radio" name="q5" value="B"> Apenas omissões administrativas não dolosas.</label>
+      <label><input type="radio" name="q5" value="C"> Exercício regular de direito.</label>
+      <label><input type="radio" name="q5" value="D"> Erros técnicos sanáveis.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('improbidade')">Verificar todas</button>
+  </div>
+
+  <div id="direitosgarantias" class="questoes">
+    <div class="questao" data-resposta="E">
       <h4>1. Considerando o que estabelece a Constituição Federal sobre os direitos e garantias fundamentais, julgue as assertivas a seguir:</h4>
-      <p>I. As normas definidoras dos direitos e garantias fundamentais têm aplicação imediata...</p>
-      <label><input type="radio" name="q20" value="a"> III, apenas.</label>
-      <label><input type="radio" name="q20" value="b"> I, II e IV, apenas.</label>
-      <label><input type="radio" name="q20" value="c"> I, II, III e IV.</label>
-      <label><input type="radio" name="q20" value="d"> II e IV, apenas.</label>
-      <label><input type="radio" name="q20" value="e"> I e III, apenas.</label>
+      <p>I. As normas definidoras dos direitos e garantias fundamentais têm aplicação imediata. Além disso, os direitos e garantias expressos na Constituição Federal não excluem outros decorrentes do regime e dos princípios por ela adotados ou dos tratados internacionais em que a República Federativa do Brasil seja parte.
+
+      </p>
+      <p>II. Os tratados e convenções internacionais sobre direitos humanos que forem aprovados, em cada Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros, serão equivalentes às leis complementares, por força do princípio da supremacia da Constituição.</p>
+      <p>III. A casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar sem consentimento do morador, salvo em caso de flagrante delito ou desastre, ou para prestar socorro, ou, durante o dia, por determinação judicial.</p>
+      <p>IV. Todos podem reunir-se pacificamente, sem armas, em locais abertos ao público, desde que não frustrem outra reunião anteriormente convocada para o mesmo local, sendo apenas exigida a prévia autorização da autoridade competente.</p>
+      <label><input type="radio" name="qdc1" value="A"> III, apenas.</label>
+      <label><input type="radio" name="qdc1" value="B"> I, II e IV, apenas.</label>
+      <label><input type="radio" name="qdc1" value="C"> I, II, III e IV.</label>
+      <label><input type="radio" name="qdc1" value="D"> II e IV, apenas.</label>
+      <label><input type="radio" name="qdc1" value="E"> I e III, apenas.</label>
       <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
     </div>
-
-    <div class="questao" data-resposta="d">
-      <h4>2. Paloma é brasileira nata e deseja adquirir a nacionalidade italiana de seu marido...</h4>
-      <label><input type="radio" name="q21" value="a"> será declarada a perda da nacionalidade brasileira tanto de Paloma, quanto de Moisés.</label>
-      <label><input type="radio" name="q21" value="b"> será declarada a perda da nacionalidade brasileira tanto de Paloma, quanto de Moisés, porém poderá readquiri-la...</label>
-      <label><input type="radio" name="q21" value="c"> será declarada a perda da nacionalidade brasileira apenas de Paloma.</label>
-      <label><input type="radio" name="q21" value="d"> não será declarada a perda da nacionalidade brasileira nem de Paloma, nem de Moisés.</label>
-      <label><input type="radio" name="q21" value="e"> será declarada a perda da nacionalidade brasileira apenas de Moisés.</label>
+    <div class="questao" data-resposta="D">
+      <h4>2. Paloma é brasileira nata e deseja adquirir a nacionalidade italiana de seu marido, naturalizando-se, assim, italiana, de forma voluntária. Moisés é brasileiro nato residente em território estrangeiro &, como condição para permanência no referido território, terá que se naturalizar, em decorrência de imposição pela norma estrangeira. Considerando somente as informações fornecidas, nas situações descritas, se ambos se naturalizarem,</h4>
+      <label><input type="radio" name="qdc2" value="A"> Será declarada a perda da nacionalidade brasileira tanto de Paloma quanto de Moisés.</label>
+      <label><input type="radio" name="qdc2" value="B"> será declarada a perda da nacionalidade brasileira tanto de Paloma, quanto de Moisés, porém poderá readquiri-la, apenas Moisés, se vier a residir novamente no Brasil.</label>
+      <label><input type="radio" name="qdc2" value="C"> será declarada a perda da nacionalidade brasileira apenas de Paloma.</label>
+      <label><input type="radio" name="qdc2" value="D"> não será declarada a perda da nacionalidade brasileira nem de Paloma, nem de Moisés.</label>
+      <label><input type="radio" name="qdc2" value="E">  
+        será declarada a perda da nacionalidade brasileira apenas de Moisés.</label>
       <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
     </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('direitosgarantias')">Verificar todas</button>
+  </div>
+  
+  <div id="organizacaoestado" class="questoes">
+    <div class="questao" data-resposta="B">
+      <h4>1. A forma federativa de Estado adotada pelo Brasil implica:</h4>
+      <label><input type="radio" name="qoe1" value="A"> Supremacia do Poder Executivo sobre os demais.</label>
+      <label><input type="radio" name="qoe1" value="B"> Repartição de competências entre União, Estados, Municípios e Distrito Federal.</label>
+      <label><input type="radio" name="qoe1" value="C"> Hierarquia entre os entes federativos.</label>
+      <label><input type="radio" name="qoe1" value="D"> Inexistência de autonomia dos entes federativos.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('organizacaoestado')">Verificar todas</button>
+  </div>
+  
+  <div id="poderlegislativo" class="questoes">
+    <div class="questao" data-resposta="C">
+      <h4>1. O Congresso Nacional é composto por:</h4>
+      <label><input type="radio" name="qpl1" value="A"> Câmara dos Deputados e Supremo Tribunal Federal.</label>
+      <label><input type="radio" name="qpl1" value="B"> Senado Federal e Tribunais de Contas.</label>
+      <label><input type="radio" name="qpl1" value="C"> Câmara dos Deputados e Senado Federal.</label>
+      <label><input type="radio" name="qpl1" value="D"> Câmara dos Deputados e Presidência da República.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('poderlegislativo')">Verificar todas</button>
+  </div>
+  
+  <div id="poderexecutivo" class="questoes">
+    <div class="questao" data-resposta="A">
+      <h4>1. O Presidente da República é eleito por:</h4>
+      <label><input type="radio" name="qpe1" value="A"> Voto direto e secreto, com valor igual para todos.</label>
+      <label><input type="radio" name="qpe1" value="B"> Nomeação pelo Congresso Nacional.</label>
+      <label><input type="radio" name="qpe1" value="C"> Eleição indireta pelo Senado.</label>
+      <label><input type="radio" name="qpe1" value="D"> Sorteio entre candidatos.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('poderexecutivo')">Verificar todas</button>
+  </div>
+  
+  <div id="poderjudiciario" class="questoes">
+    <div class="questao" data-resposta="D">
+      <h4>1. Compete ao Supremo Tribunal Federal:</h4>
+      <label><input type="radio" name="qpj1" value="A"> Julgar vereadores.</label>
+      <label><input type="radio" name="qpj1" value="B"> Processar governadores por infrações penais comuns.</label>
+      <label><input type="radio" name="qpj1" value="C"> Legislar sobre matéria penal.</label>
+      <label><input type="radio" name="qpj1" value="D"> Guardar a Constituição.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('poderjudiciario')">Verificar todas</button>
+  </div>
+  
+  <div id="funcoesjustica" class="questoes">
+    <div class="questao" data-resposta="C">
+      <h4>1. São funções essenciais à Justiça:</h4>
+      <label><input type="radio" name="qfj1" value="A"> Executivo e Legislativo.</label>
+      <label><input type="radio" name="qfj1" value="B"> Congresso Nacional e Forças Armadas.</label>
+      <label><input type="radio" name="qfj1" value="C"> Ministério Público, Advocacia Pública, Defensoria Pública e Advocacia Privada.</label>
+      <label><input type="radio" name="qfj1" value="D"> Ministérios, Conselhos e Tribunais de Contas.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('funcoesjustica')">Verificar todas</button>
+  </div>
+  
+  <div id="forcasarmadas" class="questoes">
+    <div class="questao" data-resposta="A">
+      <h4>1. As Forças Armadas são constituídas por:</h4>
+      <label><input type="radio" name="qfa1" value="A"> Marinha, Exército e Aeronáutica.</label>
+      <label><input type="radio" name="qfa1" value="B"> Polícia Federal e Polícia Civil.</label>
+      <label><input type="radio" name="qfa1" value="C"> Ministério da Defesa e Polícia Militar.</label>
+      <label><input type="radio" name="qfa1" value="D"> Marinha, Polícia Federal e Guarda Nacional.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('forcasarmadas')">Verificar todas</button>
+  </div>
+  
+  <div id="segurancapublica" class="questoes">
+    <div class="questao" data-resposta="B">
+      <h4>1. A segurança pública é exercida para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio, através dos órgãos:</h4>
+      <label><input type="radio" name="qsp1" value="A"> Exército, Marinha e Aeronáutica.</label>
+      <label><input type="radio" name="qsp1" value="B"> Polícia Federal, Polícia Rodoviária Federal, Polícia Ferroviária Federal, Polícias Civis, Polícias Militares e Corpos de Bombeiros Militares.</label>
+      <label><input type="radio" name="qsp1" value="C"> Ministérios e Conselhos de Segurança.</label>
+      <label><input type="radio" name="qsp1" value="D"> Forças Armadas e Polícia Legislativa.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('segurancapublica')">Verificar todas</button>
+  </div>
 
-    <button class="verificar" onclick="verificarRespostas('direitosgarantias')">Verificar Respostas</button>
-    <div class="resultado" id="resultado-direitosgarantias"></div>
-  </section>
+  <div id="aplicacaodaleipenalmilitar" class="questoes">
+    <div class="questao" data-resposta="B">
+      <h4>1. O Oficial Eduardo, da Polícia Militar do Estado de Sergipe, é responsável por receber militares estrangeiros para atuar em estágio por força de convênios com outros países amigos. Em determinado momento, um desses militares foi acusado de cometer um crime. Nos termos do Código Penal Militar, não havendo tratados ou convenções internacionais, será aplicada a lei penal:</h4>
+      <label><input type="radio" name="qsp1" value="A"> internacional.</label>
+      <label><input type="radio" name="qsp1" value="B"> militar brasileira.</label>
+      <label><input type="radio" name="qsp1" value="C"> comum nacional.</label>
+      <label><input type="radio" name="qsp1" value="D"> do local do militar estrangeiro.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('aplicacaodaleipenalmilitar')">Verificar todas</button>
+  </div>
 
   <script>
     function mostrarTemas(disciplina) {
@@ -187,8 +368,9 @@
         });
       });
 
+      const porcentagem = ((acertos / total) * 100).toFixed(2);
       const resultadoDiv = secao.querySelector('.resultado');
-      resultadoDiv.textContent = `Você acertou ${acertos} de ${total} questão(ões).`;
+      resultadoDiv.textContent = `Você acertou ${acertos} de ${total} questão(ões) (${porcentagem}%)`;
     }
 
     function verificarIndividual(botao) {
