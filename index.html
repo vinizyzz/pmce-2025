@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questões para Concurso</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #f1f1f1;
+      padding: 1rem;
+    }
+    .disciplinas button, .temas button {
+      margin: 5px;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .questoes, .temas {
+      display: none;
+      padding: 1rem;
+    }
+    .questao {
+      background-color: white;
+      padding: 1rem;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .questao h4 {
+      margin-bottom: 0.5rem;
+    }
+    .questao label {
+      display: block;
+      margin-bottom: 0.5rem;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    .correta {
+      background-color: #d4edda;
+    }
+    .incorreta {
+      background-color: #f8d7da;
+    }
+    .resultado {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    button.verificar {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Questões para PMCE 2025</h1>
+  </header>
+
+  <nav class="disciplinas">
+    <button onclick="mostrarTemas('constitucional')">Direito Constitucional</button>
+    <button onclick="mostrarTemas('administrativo')">Direito Administrativo</button>
+    <button onclick="mostrarTemas('penalmilitar')">Direito Penal Militar</button>
+    <button onclick="mostrarTemas('processopenal')">Processo Penal</button>
+    <button onclick="mostrarTemas('direitoshumanos')">Direitos Humanos</button>
+    <button onclick="mostrarTemas('criminologia')">Criminologia</button>
+    <button onclick="mostrarTemas('seguranca')">Segurança Pública</button>
+  </nav>
+
+  <div id="temas-constitucional" class="temas">
+    <h3>Temas de Direito Constitucional</h3>
+    <button onclick="mostrarQuestoes('direitosgarantias')">Direitos e Garantias Fundamentais</button>
+    <button onclick="mostrarQuestoes('organizacaoestado')">Organização do Estado</button>
+    <button onclick="mostrarQuestoes('poderlegislativo')">Poder Legislativo</button>
+    <button onclick="mostrarQuestoes('poderexecutivo')">Poder Executivo</button>
+    <button onclick="mostrarQuestoes('poderjudiciario')">Poder Judiciário</button>
+    <button onclick="mostrarQuestoes('funcoesjustica')">Funções Essenciais à Justiça</button>
+    <button onclick="mostrarQuestoes('forcasarmadas')">Das Forças Armadas</button>
+    <button onclick="mostrarQuestoes('segurancapublica')">Da Segurança Pública</button>
+  </div>
+
+  <div id="temas-penalmilitar" class="temas">
+    <h3>Temas de Direito Penal Militar</h3>
+    <button onclick="mostrarQuestoes('aplicacaolei')">Aplicação da Lei Penal Militar</button>
+    <button onclick="mostrarQuestoes('crime')">Crime</button>
+    <button onclick="mostrarQuestoes('imputabilidade')">Imputabilidade Penal</button>
+    <button onclick="mostrarQuestoes('concursoagentes')">Concurso de Agentes</button>
+  </div>
+
+  <section id="aplicacaolei" class="questoes">
+    <div class="questao" data-resposta="b">
+      <h4>1. A Lei Penal Militar aplica-se a:</h4>
+      <label><input type="radio" name="q10" value="a"> Apenas militares da ativa</label>
+      <label><input type="radio" name="q10" value="b"> Militares e civis em determinados casos</label>
+      <label><input type="radio" name="q10" value="c"> Somente em tempos de guerra</label>
+      <label><input type="radio" name="q10" value="d"> Apenas em território estrangeiro</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    <button class="verificar" onclick="verificarRespostas('aplicacaolei')">Verificar Respostas</button>
+    <div class="resultado" id="resultado-aplicacaolei"></div>
+  </section>
+
+  <section id="direitosgarantias" class="questoes">
+    <div class="questao" data-resposta="e">
+      <h4>1. Considerando o que estabelece a Constituição Federal sobre os direitos e garantias fundamentais, julgue as assertivas a seguir:</h4>
+      <p>I. As normas definidoras dos direitos e garantias fundamentais têm aplicação imediata...</p>
+      <label><input type="radio" name="q20" value="a"> III, apenas.</label>
+      <label><input type="radio" name="q20" value="b"> I, II e IV, apenas.</label>
+      <label><input type="radio" name="q20" value="c"> I, II, III e IV.</label>
+      <label><input type="radio" name="q20" value="d"> II e IV, apenas.</label>
+      <label><input type="radio" name="q20" value="e"> I e III, apenas.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="d">
+      <h4>2. Paloma é brasileira nata e deseja adquirir a nacionalidade italiana de seu marido...</h4>
+      <label><input type="radio" name="q21" value="a"> será declarada a perda da nacionalidade brasileira tanto de Paloma, quanto de Moisés.</label>
+      <label><input type="radio" name="q21" value="b"> será declarada a perda da nacionalidade brasileira tanto de Paloma, quanto de Moisés, porém poderá readquiri-la...</label>
+      <label><input type="radio" name="q21" value="c"> será declarada a perda da nacionalidade brasileira apenas de Paloma.</label>
+      <label><input type="radio" name="q21" value="d"> não será declarada a perda da nacionalidade brasileira nem de Paloma, nem de Moisés.</label>
+      <label><input type="radio" name="q21" value="e"> será declarada a perda da nacionalidade brasileira apenas de Moisés.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <button class="verificar" onclick="verificarRespostas('direitosgarantias')">Verificar Respostas</button>
+    <div class="resultado" id="resultado-direitosgarantias"></div>
+  </section>
+
+  <script>
+    function mostrarTemas(disciplina) {
+      document.querySelectorAll('.questoes, .temas').forEach(el => el.style.display = 'none');
+      const temaDiv = document.getElementById('temas-' + disciplina);
+      if (temaDiv) temaDiv.style.display = 'block';
+    }
+
+    function mostrarQuestoes(tema) {
+      document.querySelectorAll('.questoes').forEach(secao => secao.style.display = 'none');
+      document.getElementById(tema).style.display = 'block';
+    }
+
+    function verificarRespostas(tema) {
+      const secao = document.getElementById(tema);
+      const questoes = secao.querySelectorAll('.questao');
+      let acertos = 0;
+      let total = 0;
+
+      questoes.forEach(questao => {
+        total++;
+        const correta = questao.dataset.resposta;
+        const inputs = questao.querySelectorAll('input[type="radio"]');
+
+        inputs.forEach(input => {
+          const label = input.parentElement;
+          label.classList.remove('correta', 'incorreta');
+
+          if (input.checked) {
+            if (input.value === correta) {
+              label.classList.add('correta');
+              acertos++;
+            } else {
+              label.classList.add('incorreta');
+            }
+          }
+
+          if (input.value === correta && !input.checked) {
+            label.classList.add('correta');
+          }
+        });
+      });
+
+      const resultadoDiv = secao.querySelector('.resultado');
+      resultadoDiv.textContent = `Você acertou ${acertos} de ${total} questão(ões).`;
+    }
+
+    function verificarIndividual(botao) {
+      const questao = botao.closest('.questao');
+      const correta = questao.dataset.resposta;
+      const inputs = questao.querySelectorAll('input[type="radio"]');
+
+      inputs.forEach(input => {
+        const label = input.parentElement;
+        label.classList.remove('correta', 'incorreta');
+
+        if (input.checked) {
+          if (input.value === correta) {
+            label.classList.add('correta');
+          } else {
+            label.classList.add('incorreta');
+          }
+        }
+
+        if (input.value === correta && !input.checked) {
+          label.classList.add('correta');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
