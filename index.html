@@ -149,7 +149,6 @@
     <button onclick="mostrarQuestoes('leimariadapenha')"> Lei Maria da Penha</button>
     <button onclick="mostrarQuestoes('racismo')">  Racismo. Racismo institucional. Estatuto da 
       Igualdade Racial</button>
-    <button onclick="mostrarQuestoes('prisaotemporaria')">prisão temporária</button>
     <button onclick="mostrarQuestoes('estatutodapessoacomdeficiencia')">  Estatuto da Pessoa com Deficiência</button>
     <button onclick="mostrarQuestoes('direitosdaspessoasfavelas')"> Direito das pessoas moradoras de favelas</button>
     <button onclick="mostrarQuestoes('violenciadeestado')"> Direito das vítimas de violência de Estado</button>
@@ -311,9 +310,410 @@
     </div>
     
     
-    
     <div class="resultado"></div>
     <button class="verificar" onclick="verificarRespostas('prisaoeliberdade')">Verificar todas</button>
+  </div>
+
+  <div id="prisaotemporaria" class="questoes">
+    <div class="questao" data-resposta="B">
+      <h4>1. (IDECAN) O despacho que decretar a prisão temporária deverá ser fundamentado e prolatado dentro do prazo de:</h4>
+      <label><input type="radio" name="qpt1" value="A"> 48 horas, a partir do recebimento da representação.</label>
+      <label><input type="radio" name="qpt1" value="B"> 24 horas, a partir do recebimento da representação ou do requerimento.</label>
+      <label><input type="radio" name="qpt1" value="C"> 5 dias, a contar da apresentação do réu em audiência de custódia.</label>
+      <label><input type="radio" name="qpt1" value="D"> 8 dias, a partir do recebimento do requerimento.</label>
+      <label><input type="radio" name="qpt1" value="E"> 10 dias, a partir do recebimento da representação ou do requerimento.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="D">
+      <h4>2. (IBADE) É correto afirmar que a prisão temporária será decretada pelo Juiz, em face da representação da autoridade policial ou de requerimento do Ministério Público, e terá o prazo de:</h4>
+      <label><input type="radio" name="qpt2" value="A"> 48h, prorrogável por igual período em caso de extrema e comprovada necessidade;</label>
+      <label><input type="radio" name="qpt2" value="B"> 72h, prorrogável por igual período em caso de extrema e comprovada necessidade;</label>
+      <label><input type="radio" name="qpt2" value="C"> 5 (cinco) dias, improrrogável;</label>
+      <label><input type="radio" name="qpt2" value="D"> 5 (cinco) dias, prorrogável por igual período em caso de extrema e comprovada necessidade;</label>
+      <label><input type="radio" name="qpt2" value="E"> 10 (dez) dias, improrrogável.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="E">
+      <h4>3. (IBADE) Em relação à prisão temporária, prevista na Lei n° 7.960/1989, assinale a alternativa correta.</h4>
+      <label><input type="radio" name="qpt3" value="A"> Decorrido o prazo contido no mandado de prisão, a autoridade responsável pela custódia deverá aguardar nova ordem da autoridade judicial, para pôr o preso em liberdade, podendo determinar a prorrogação da prisão temporária ou da decretação da prisão preventiva por até mais 5 (cinco) dias.</label>
+      <label><input type="radio" name="qpt3" value="B"> A prisão será decretada pelo Juiz, de ofício, ou em face da representação da autoridade policial ou de requerimento do Ministério Público, e terá o prazo de 5 (cinco) dias, prorrogável por igual período em caso de extrema e comprovada necessidade.</label>
+      <label><input type="radio" name="qpt3" value="C"> Exclui-se o dia do cumprimento do mandado de prisão no cômputo do prazo de prisão temporária.</label>
+      <label><input type="radio" name="qpt3" value="D"> Poderá ser decretada a prisão pelo Juiz para os crimes que a admitem, tanto na fase pré-processual (inquérito policial), quanto na fase pré-processual (ação penal).</label>
+      <label><input type="radio" name="qpt3" value="E"> O Juiz poderá, de ofício, ou a requerimento do Ministério Público e do Advogado, determinar que o preso lhe seja apresentado, solicitar informações e esclarecimentos da autoridade policial e submetê-lo a exame de corpo de delito.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="D">
+      <h4>4. (IDECAN) A Lei nº 7.960 de 21 de dezembro de 1989, que dispõe sobre a prisão temporária, e o seu taxativo art. 1º, III, definem que cabe prisão temporária quando houver fundadas razões, de acordo com qualquer prova admitida na legislação penal, de autoria ou participação do indiciado nos seguintes crimes, exceto:</h4>
+      <label><input type="radio" name="qpt4" value="A"> Sequestro ou cárcere privado.</label>
+      <label><input type="radio" name="qpt4" value="B"> Extorsão.</label>
+      <label><input type="radio" name="qpt4" value="C"> Envenenamento de água potável ou substância alimentícia ou medicinal qualificado pela morte.</label>
+      <label><input type="radio" name="qpt4" value="D"> Falsificação de documento público.</label>
+      <label><input type="radio" name="qpt4" value="E"> Roubo.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>5. (AOCP) Em relação às prisões, informe se é verdadeiro (V) ou falso (F) o que se afirma a seguir e assinale a alternativa com a sequência correta.</h4>
+      <p>( ) O rol de crimes que admitem a prisão temporária é taxativo.</p>
+      <p>( ) Preenchidos os demais requisitos legais e jurisprudenciais, o crime de roubo simples admite a decretação de prisão temporária.</p>
+      <p>( ) É vedado ao juiz, de ofício, revogar a prisão preventiva.</p>
+      <p>( ) Na motivação da decretação da prisão preventiva, o juiz deverá indicar concretamente a existência de fatos novos ou contemporâneos que justifiquem a aplicação da medida adotada.</p>
+      <label><input type="radio" name="qpt5" value="A"> V – F – V – V.</label>
+      <label><input type="radio" name="qpt5" value="B"> V – V – F – V.</label>
+      <label><input type="radio" name="qpt5" value="C"> F – F – V – F.</label>
+      <label><input type="radio" name="qpt5" value="D"> F – V – F – F.</label>
+      <label><input type="radio" name="qpt5" value="E"> F – F – V – V.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="C">
+      <h4>6. (CONSULPLAN) “Trata-se de medida acauteladora, de restrição da liberdade de locomoção, por tempo determinado, destinada a possibilitar as investigações a respeito de crimes graves, durante o inquérito policial.” Tal informação se refere à prisão:</h4>
+      <label><input type="radio" name="qpt6" value="A"> Cautelar.</label>
+      <label><input type="radio" name="qpt6" value="B"> Preventiva.</label>
+      <label><input type="radio" name="qpt6" value="C"> Temporária.</label>
+      <label><input type="radio" name="qpt6" value="D"> Em flagrante.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>7. (FUNDATEC) Nos termos da Lei nº 7.960/1989, que dispõe sobre a Prisão Temporária, assinale a alternativa correta.</h4>
+      <label><input type="radio" name="qpt7" value="A"> Os presos temporários poderão juntar-se aos demais detentos.</label>
+      <label><input type="radio" name="qpt7" value="B"> A prisão somente poderá ser executada depois da expedição de mandado judicial.</label>
+      <label><input type="radio" name="qpt7" value="C"> Exclui-se o dia do cumprimento do mandado de prisão no cômputo do prazo de prisão temporária.</label>
+      <label><input type="radio" name="qpt7" value="D"> A prisão temporária será decretada pelo Ministério Público, em face da representação da autoridade policial.</label>
+      <label><input type="radio" name="qpt7" value="E"> A prisão temporária será decretada pelo Ministério Público, em face de requerimento do Juiz.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="E">
+      <h4>8. (EDUCA) Segundo o art. 1° da Lei nº 7.960 de 21 de dezembro de 1989, caberá prisão temporária: “Quando imprescindível para as investigações do inquérito policial; quando o indiciado não tiver residência fixa ou não fornecer elementos necessários ao esclarecimento de sua identidade; quando houver fundadas razões, de acordo com qualquer prova admitida na legislação penal, de autoria ou participação do indiciado nos seguintes crimes”, EXCETO:</h4>
+      <label><input type="radio" name="qpt8" value="A"> Sequestro ou cárcere privado.</label>
+      <label><input type="radio" name="qpt8" value="B"> Crimes contra o sistema financeiro.</label>
+      <label><input type="radio" name="qpt8" value="C"> Crimes previstos na Lei de Terrorismo.</label>
+      <label><input type="radio" name="qpt8" value="D"> Epidemia com resultado de morte.</label>
+      <label><input type="radio" name="qpt8" value="E"> Roubo, mediante concurso de pessoas para obter qualquer vantagem, como condição ou preço do resgate.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="C">
+      <h4>9. (IDIB) Sobre a prisão temporária, assinale a alternativa correta:</h4>
+      <label><input type="radio" name="qpt9" value="A"> A prisão temporária terá o prazo de 10 (dez) dias.</label>
+      <label><input type="radio" name="qpt9" value="B"> A execução da prisão temporária independe da expedição de mandado judicial.</label>
+      <label><input type="radio" name="qpt9" value="C"> A prisão temporária pode ser prorrogada em caso de extrema e comprovada necessidade.</label>
+      <label><input type="radio" name="qpt9" value="D"> Não se inclui o dia do cumprimento do mandado de prisão no cômputo do prazo de prisão temporária.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>10. (EDUCA) De acordo com o art. 2° “a prisão temporária será decretada pelo Juiz, em face da representação da autoridade policial ou de requerimento do Ministério Público, e terá o prazo de”:</h4>
+      <label><input type="radio" name="qpt10" value="A"> 3 (três) dias, prorrogável por igual período em caso de extrema e comprovada necessidade.</label>
+      <label><input type="radio" name="qpt10" value="B"> 5 (cinco) dias, prorrogável por igual período em caso de extrema e comprovada necessidade.</label>
+      <label><input type="radio" name="qpt10" value="C"> 8 (oito) dias, prorrogável por igual período em caso de extrema e comprovada necessidade.</label>
+      <label><input type="radio" name="qpt10" value="D"> 9 (nove) dias, prorrogável por igual período em caso de extrema e comprovada necessidade.</label>
+      <label><input type="radio" name="qpt10" value="E"> 10 (dez) dias, prorrogável por igual período em caso de extrema e comprovada necessidade.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="A">
+      <h4>11. Considere os seguintes casos hipotéticos:</h4>
+      <p>I. Paulo, funcionário público no exercício do seu cargo, cometeu crime de corrupção passiva ao exigir dinheiro de uma determinada pessoa para deixar de praticar determinado ato de ofício.</p>
+      <p>II. Júlio cometeu crime de cárcere privado (artigo 148, do Código Penal) ao invadir a casa da ex-namorada, que não queria reatar o relacionamento amoroso.</p>
+      <p>III. Afonso cometeu crime de roubo (artigo 157, do Código Penal) contra um hipermercado situado na cidade de São Paulo, em comparsaria com outros elementos.</p>
+      <p>IV. Manoel, funcionário público, cometeu crime de peculato após se apropriar de dinheiro de que teve a posse em razão do seu cargo.</p>
+      <h4>Presentes todos os requisitos legais previstos na Lei nº 7.960/1989, que dispõe sobre a prisão temporária, o magistrado competente poderá decretar a prisão temporária de:</h4>
+      
+      <label><input type="radio" name="qpt11" value="A"> Júlio e Afonso, apenas.</label>
+      <label><input type="radio" name="qpt11" value="B"> Júlio e Manoel, apenas.</label>
+      <label><input type="radio" name="qpt11" value="C"> Paulo, Júlio e Manoel, apenas.</label>
+      <label><input type="radio" name="qpt11" value="D"> Paulo, Júlio, Afonso e Manoel.</label>
+      <label><input type="radio" name="qpt11" value="E"> Paulo, Afonso e Manoel, apenas.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('prisaotemporaria')">Verificar todas</button>
+  </div>
+
+  <div id="pronasci" class="questoes">
+    <div class="questao" data-resposta="A">
+      <h4>1. (IDECAN) Aponte a alternativa que indica corretamente qual Ministério foi responsável pela coordenação do Programa Nacional de Segurança Pública com Cidadania (Pronasci):</h4>
+      <label><input type="radio" name="qpns1" value="A"> Ministério da Justiça e Segurança Pública.</label>
+      <label><input type="radio" name="qpns1" value="B"> Ministério da Defesa e Segurança Pública.</label>
+      <label><input type="radio" name="qpns1" value="C"> Ministério da Cidadania e Segurança Pública.</label>
+      <label><input type="radio" name="qpns1" value="D"> Ministério das Relações Exteriores.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="A">
+      <h4>2. (IDECAN) Dentro das diretrizes do Pronasci, marque a alternativa certa acerca das condições exigidas para que o beneficiário receba a Bolsa-Formação e do oferecimento e reconhecimento dos cursos:</h4>
+      <label><input type="radio" name="qpns2" value="A"> Frequentar, a cada 12 (doze) meses, ao menos um dos cursos oferecidos ou reconhecidos pelos órgãos do Ministério da Justiça, é condição exigida em lei para ser beneficiário do Bolsa-Formação.</label>
+      <label><input type="radio" name="qpns2" value="B"> Não tenha cometido nem sido condenado pela prática de infração administrativa grave ou média, ou não possua condenação penal nos últimos 3 (três) anos, é condição exigida em lei para ser beneficiário do Bolsa-Formação.</label>
+      <label><input type="radio" name="qpns2" value="C"> Não perceba remuneração mensal inferior ao limite estabelecido em regulamento, é condição exigida em lei para ser beneficiário do Bolsa-Formação.</label>
+      <label><input type="radio" name="qpns2" value="D"> O Departamento Penitenciário Nacional do Ministério da Justiça será responsável pelo oferecimento e reconhecimento dos cursos destinados aos agentes penitenciários, agentes carcerários e policiais civis.</label>
+      <label><input type="radio" name="qpns2" value="E"> A Secretaria Nacional de Segurança Pública do Ministério da Justiça será responsável pelo oferecimento e reconhecimento dos cursos destinados aos peritos, agentes penitenciários, agentes carcerários, policiais civis, policiais militares e bombeiros militares.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="D">
+      <h4>3. (IDECAN) O Pronasci apresenta uma série de ações estruturais voltadas à modernização das instituições de segurança pública e do sistema prisional. Assim sendo, leia as alternativas abaixo e responda o que se pede acerca dessas ações estruturais:</h4>
+      <p>
+        I. Construção de estabelecimentos penais especiais para mulheres<br>
+        II. Construção de estabelecimentos penais especiais para jovens entre 16 e 24 anos<br>
+        III. Construção de módulos de saúde, educação e informática em estabelecimentos penais.<br>
+        IV. Manutenção da Força Nacional de Segurança em quartéis da Polícia Militar<br>
+        V. Construção dos Centros de Reabilitação do Agressor – Lei Maria da Penha
+      </p>
+      <label><input type="radio" name="qpns3" value="A"> I e II estão certos</label>
+      <label><input type="radio" name="qpns3" value="B"> II e III estão errados</label>
+      <label><input type="radio" name="qpns3" value="C"> III e IV estão certos</label>
+      <label><input type="radio" name="qpns3" value="D"> II e IV estão errados</label>
+      <label><input type="radio" name="qpns3" value="E"> IV e V estão certos</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>4. (IDECAN) Assinale abaixo o único projeto que não está contemplado no Programa Nacional de Segurança Pública com Cidadania (PRONASCI):</h4>
+      <label><input type="radio" name="qpns4" value="A"> Projeto Reservista-Cidadão.</label>
+      <label><input type="radio" name="qpns4" value="B"> Projeto RENASCI.</label>
+      <label><input type="radio" name="qpns4" value="C"> Projeto Protejo.</label>
+      <label><input type="radio" name="qpns4" value="D"> Projeto Mulheres da Paz.</label>
+      <label><input type="radio" name="qpns4" value="E"> Projeto Bolsa-Formação.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="E">
+      <h4>5. (IDECAN) Dentre as medidas citadas no Plano Nacional de Segurança Pública (PNSP), tem-se o engajamento da sociedade na luta pela redução da violência. Acerca do tema referente a participação da sociedade civil na segurança pública, apresentamos as assertivas abaixo. Leia e depois responda o que se pede:</h4>
+      <p>I. Um dos desafios do Plano Nacional de Segurança Pública é obter o apoio da população.</p>
+      <p>II. O modelo a ser implantado no PNSP é o envolvimento comunitário, com a criação de conselhos de segurança pública nos âmbitos federal, estadual e municipal.</p>
+      <p>III. A Constituição Federal de 1988 é enfática ao afirmar que a segurança pública, dever do Estado, direito e responsabilidade de todos, significando dizer que todos os cidadãos brasileiros são responsáveis pela segurança de toda a sociedade.</p>
+      <p>IV. O Programa Nacional de Segurança Pública com Cidadania – Pronasci não contempla o envolvimento da comunidade na prevenção da violência vez que isso está no âmbito do PNSP.</p>
+      <label><input type="radio" name="qpns5" value="A"> I e IV estão corretos</label>
+      <label><input type="radio" name="qpns5" value="B"> II e III estão errados</label>
+      <label><input type="radio" name="qpns5" value="C"> III e IV estão corretos</label>
+      <label><input type="radio" name="qpns5" value="D"> II e IV estão errados</label>
+      <label><input type="radio" name="qpns5" value="E"> II e III estão certos</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="E">
+      <h4>6. (IDECAN) “Art. 2º. O PRONASCI destina-se a articular ações de segurança pública para a prevenção, controle e repressão da criminalidade, estabelecendo políticas sociais e ações de proteção às vítimas”. Essa é a destinação do PRONASCI conforme Lei nº 11.530, de 24 de outubro de 2007 e suas alterações posteriores. Dentre as alternativas abaixo, marque a que <strong>não</strong> contém Diretrizes do Pronasci:</h4>
+      <label><input type="radio" name="qpns6" value="A"> promoção dos direitos humanos, intensificando uma cultura de paz, de apoio ao desarmamento e de combate sistemático aos preconceitos de gênero, étnico, racial, geracional, de orientação sexual e de diversidade cultural.</label>
+      <label><input type="radio" name="qpns6" value="B"> modernização das instituições de segurança pública e do sistema prisional;</label>
+      <label><input type="radio" name="qpns6" value="C"> ressocialização dos indivíduos que cumprem penas privativas de liberdade e egressos do sistema prisional, mediante implementação de projetos educativos, esportivos e profissionalizantes.</label>
+      <label><input type="radio" name="qpns6" value="D"> participação de jovens e adolescentes, de egressos do sistema prisional, de famílias expostas à violência urbana e de mulheres em situação de violência.</label>
+      <label><input type="radio" name="qpns6" value="E"> jovens e adolescentes egressos do sistema prisional ou em situação de moradores de rua, famílias expostas à violência urbana, vítimas da criminalidade e mulheres em situação de violência.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="D">
+      <h4>7. (FGV) Acerca do Programa Nacional de Segurança Pública com Cidadania (PRONASCI), assinale a afirmativa correta:</h4>
+      <label><input type="radio" name="qpns7" value="A"> Pretende erradicar operações conjuntas entre as polícias civis e militares.</label>
+      <label><input type="radio" name="qpns7" value="B"> Pretende alterações legislativas para criação de novos delitos e aumento das penas.</label>
+      <label><input type="radio" name="qpns7" value="C"> Pretende fomentar o comércio de armas de fogo.</label>
+      <label><input type="radio" name="qpns7" value="D"> Pretende articular ações de segurança pública com políticas sociais.</label>
+      <label><input type="radio" name="qpns7" value="E"> Pretende garantir privilégios aos agentes públicos dos órgãos de segurança.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>8. (FUNRIO) O Programa Nacional de Segurança Pública com Cidadania – PRONASCI – possui, sem prejuízo de outros, o projeto reservista-cidadão, destinado à capacitação de jovens recém-licenciados do serviço militar obrigatório, para atuarem como agentes comunitários nas áreas geográficas atingidas pelo PRONASCI. O trabalho desenvolvido pelo reservista-cidadão terá duração de:</h4>
+      <label><input type="radio" name="qpns8" value="A"> 24 (vinte e quatro) meses.</label>
+      <label><input type="radio" name="qpns8" value="B"> 12 (doze) meses.</label>
+      <label><input type="radio" name="qpns8" value="C"> 18 (dezoito) meses.</label>
+      <label><input type="radio" name="qpns8" value="D"> 20 (vinte) meses.</label>
+      <label><input type="radio" name="qpns8" value="E"> 30 (trinta) meses.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="D">
+      <h4>9. (FUNRIO) Os programas, projetos e ações que compõem o Programa Nacional de Segurança Pública com Cidadania, instituído pela Lei Federal n° 11.530 de 24 de outubro de 2007 e alterações, possuem, como foco prioritário etário, população:</h4>
+      <label><input type="radio" name="qpns9" value="A"> jovem de 18 (dezoito) a 30 (trinta) anos.</label>
+      <label><input type="radio" name="qpns9" value="B"> juvenil de 12 (doze) a 18 (dezoito) anos.</label>
+      <label><input type="radio" name="qpns9" value="C"> adulta de 20 (vinte) a 45 (quarenta e cinco anos).</label>
+      <label><input type="radio" name="qpns9" value="D"> juvenil de 15 (quinze) a 24 (vinte e quatro) anos.</label>
+      <label><input type="radio" name="qpns9" value="E"> adulta de 20 (vinte) a 35 (trinta e cinco) anos.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="C">
+      <h4>10. (FUNRIO) O Programa Nacional de Segurança Pública com Cidadania – PRONASCI –, instituído pela Lei Federal n° 11.530 de 24 de outubro de 2007 e alterações, possui, dentre outras, a seguinte diretriz:</h4>
+      <label><input type="radio" name="qpns10" value="A"> enfraquecimento dos conselhos tutelares.</label>
+      <label><input type="radio" name="qpns10" value="B"> desestímulo à segurança e à convivência pacífica.</label>
+      <label><input type="radio" name="qpns10" value="C"> garantia do acesso à justiça, especialmente nos territórios vulneráveis.</label>
+      <label><input type="radio" name="qpns10" value="D"> redução das medidas de enfrentamento ao crime organizado.</label>
+      <label><input type="radio" name="qpns10" value="E"> destituição de redes sociais e comunitárias.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('pronasci')">Verificar todas</button>
+  </div>
+
+  <div id="tiposdecriminosos" class="questoes">
+    <div class="questao" data-resposta="E">
+      <h4>1. (CESPE) Assinale a opção que apresenta corretamente o teórico que classificava os criminosos nas três categorias seguintes: criminoso assassino, criminoso enérgico ou violento, e ladrão ou neurastênico.</h4>
+      <label><input type="radio" name="qtc1" value="A"> Cesare Lombroso</label>
+      <label><input type="radio" name="qtc1" value="B"> Enrico Ferri</label>
+      <label><input type="radio" name="qtc1" value="C"> Giovanni Carmignani</label>
+      <label><input type="radio" name="qtc1" value="D"> Francesco Carrara</label>
+      <label><input type="radio" name="qtc1" value="E"> Raffaele Garofalo</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="C">
+      <h4>2. (NUCEPE) Marque a alternativa CORRETA, no que diz respeito à classificação do criminoso, segundo Lombroso:</h4>
+      <label><input type="radio" name="qtc2" value="A"> Criminoso louco: é o tipo de criminoso que tem instinto para a prática de delitos, é uma espécie de selvagem para a sociedade.</label>
+      <label><input type="radio" name="qtc2" value="B"> Criminoso nato: é aquele tipo de criminoso malvado, perverso, que deve sobreviver em manicômios.</label>
+      <label><input type="radio" name="qtc2" value="C"> Criminoso por paixão: aquele que utiliza de violência para resolver problemas passionais, geralmente é nervoso, irritado e leviano.</label>
+      <label><input type="radio" name="qtc2" value="D"> Criminoso por paixão: este aponta uma tendência hereditária, possui hábitos criminosos influenciados pela ocasião.</label>
+      <label><input type="radio" name="qtc2" value="E"> Criminoso louco: é o criminoso sórdido com deficiência do senso moral e com hábitos criminosos influenciados pela situação.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="A">
+      <h4>3. De acordo com Cesare Lombroso, qual das alternativas abaixo corresponde ao conceito de "criminoso nato"?</h4>
+      <label><input type="radio" name="qtc3" value="A"> É aquele indivíduo biologicamente predisposto ao crime, identificado por características físicas anômalas.</label>
+      <label><input type="radio" name="qtc3" value="B"> É o indivíduo que comete crimes por impulso emocional e momentâneo.</label>
+      <label><input type="radio" name="qtc3" value="C"> É aquele que adota comportamentos criminosos em razão de influência do meio social.</label>
+      <label><input type="radio" name="qtc3" value="D"> É o delinquente ocasional, que age por oportunidade.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="C">
+      <h4>4. Segundo Lombroso, o criminoso por paixão:</h4>
+      <label><input type="radio" name="qtc4" value="A"> É o indivíduo com deficiência mental severa.</label>
+      <label><input type="radio" name="qtc4" value="B"> É um criminoso frio e calculista, movido por interesse econômico.</label>
+      <label><input type="radio" name="qtc4" value="C"> É o indivíduo que comete crimes por impulsos emocionais fortes, como raiva ou ciúmes.</label>
+      <label><input type="radio" name="qtc4" value="D"> É o criminoso ocasional influenciado pelo meio.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>5. Enrico Ferri considerava o criminoso como resultado de fatores:</h4>
+      <label><input type="radio" name="qtc5" value="A"> Apenas genéticos e hereditários.</label>
+      <label><input type="radio" name="qtc5" value="B"> Antropológicos, físicos e sociais.</label>
+      <label><input type="radio" name="qtc5" value="C"> Apenas sociais.</label>
+      <label><input type="radio" name="qtc5" value="D"> Econômicos e políticos.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="D">
+      <h4>6. Para Garofalo, o criminoso pode ser considerado como:</h4>
+      <label><input type="radio" name="qtc6" value="A"> Um indivíduo apenas influenciado pelo meio social.</label>
+      <label><input type="radio" name="qtc6" value="B"> Uma vítima das circunstâncias econômicas.</label>
+      <label><input type="radio" name="qtc6" value="C"> Um sujeito patológico, incapaz de responder por seus atos.</label>
+      <label><input type="radio" name="qtc6" value="D"> Um ser perigoso que atenta contra os sentimentos altruísticos fundamentais.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="C">
+      <h4>7. Qual das categorias abaixo NÃO é uma classificação de criminoso segundo Lombroso?</h4>
+      <label><input type="radio" name="qtc7" value="A"> Criminoso nato</label>
+      <label><input type="radio" name="qtc7" value="B"> Criminoso por paixão</label>
+      <label><input type="radio" name="qtc7" value="C"> Criminoso circunstancial</label>
+      <label><input type="radio" name="qtc7" value="D"> Criminoso louco</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="A">
+      <h4>8. Qual característica física era comumente associada por Lombroso ao criminoso nato?</h4>
+      <label><input type="radio" name="qtc8" value="A"> Mandíbula proeminente</label>
+      <label><input type="radio" name="qtc8" value="B"> Cabelos loiros</label>
+      <label><input type="radio" name="qtc8" value="C"> Olhos claros</label>
+      <label><input type="radio" name="qtc8" value="D"> Estatura elevada</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>9. Para Ferri, qual o papel da sociedade na criminalidade?</h4>
+      <label><input type="radio" name="qtc9" value="A"> Nenhum, pois os fatores biológicos são os únicos relevantes.</label>
+      <label><input type="radio" name="qtc9" value="B"> A sociedade pode contribuir para o surgimento do comportamento criminoso por meio da exclusão social e da pobreza.</label>
+      <label><input type="radio" name="qtc9" value="C"> A sociedade tem apenas o papel de punir, não de prevenir.</label>
+      <label><input type="radio" name="qtc9" value="D"> O papel da sociedade é neutro.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="D">
+      <h4>10. Qual teórico defendia a ideia de que o criminoso devia ser extirpado da sociedade por não possuir sentimento de piedade?</h4>
+      <label><input type="radio" name="qtc10" value="A"> Cesare Beccaria</label>
+      <label><input type="radio" name="qtc10" value="B"> Enrico Ferri</label>
+      <label><input type="radio" name="qtc10" value="C"> Franz von Liszt</label>
+      <label><input type="radio" name="qtc10" value="D"> Raffaele Garofalo</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="C">
+      <h4>11. Para Lombroso, qual é a importância do estudo anatômico do criminoso?</h4>
+      <label><input type="radio" name="qtc11" value="A"> Nenhuma, pois ele se baseava em fatores exclusivamente sociais.</label>
+      <label><input type="radio" name="qtc11" value="B"> Importante apenas para identificação criminal após o crime.</label>
+      <label><input type="radio" name="qtc11" value="C"> Fundamental para identificar traços hereditários e degenerativos no criminoso.</label>
+      <label><input type="radio" name="qtc11" value="D"> Só era relevante nos casos de criminosos por paixão.</label>
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('tiposdecriminosos')">Verificar todas</button>
+  </div>
+
+  <div id="crimecomofatosocial" class="questoes">
+    <div class="questao" data-resposta="E">
+      <h4>1. (FGV) O conceito de crime como fato social é formulado pelo sociólogo:</h4>
+      <label><input type="radio" name="qcfs1" value="A"> Karl Marx.</label> 
+      <label><input type="radio" name="qcfs1" value="B"> Max Weber.</label> 
+      <label><input type="radio" name="qcfs1" value="C"> Zygmunt Bauman.</label> 
+      <label><input type="radio" name="qcfs1" value="D"> Howard Becker.</label> 
+      <label><input type="radio" name="qcfs1" value="E"> Émile Durkheim.</label> 
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+
+    <div class="questao" data-resposta="C">
+      <h4>2. (IDECAN) Ao tratarmos do chamado paradigma interacionista (ou da reação social), estaremos diante da análise - do ponto de vista da criminologia - de como as interações sociais entre os indivíduos afetam a construção do delito e a criação do próprio criminoso. Assim, no que abrange ao modelo da reação social, especificamente no que toca a origem do crime, assinale a alternativa correta.</h4>
+      <label><input type="radio" name="qcfs2" value="A"> O surgimento do delito se dá em decorrência da incapacidade do Estado de manter a harmonia entre suas atuações pela via administrativa ou as atuações de suas instituições policiais e as suas próprias normas jurídicas.</label> 
+      <label><input type="radio" name="qcfs2" value="B"> A criminalidade tem origem em aspectos inatos do próprio ser humano, ou seja, a tendência à prática de condutas delitivas tem origem genética ou mesmo hereditária. Assim, questões de políticas públicas, ou a própria atuação da Polícia Militar, não impedem a prática do crime.</label> 
+      <label><input type="radio" name="qcfs2" value="C"> Podemos afirmar que a origem do crime se dá por meio de uma construção social, ou seja, a comunidade passa a ver que determinado ato fere seus costumes ou afeta suas relações, impondo, desta forma, que a prática deste ato é um crime e deve ser punida.</label> 
+      <label><input type="radio" name="qcfs2" value="D"> O fato criminoso não advém do livre arbítrio do ser humano, mas sim da concretização de diversos fatores que contribuem para a criação do delinquente, sendo estes de ordem física, regional e emocional.</label> 
+      <label><input type="radio" name="qcfs2" value="E"> O próprio sistema de persecução penal, enquanto ferramenta estatal de punição, serve de “criador de injustiças e desigualdades sociais”, ao passo que se trata de ferramenta com caráter seletivo e voltada à defesa das elites.</label> 
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>3. (IADES) Objeto integrado pelo conjunto de mecanismos e sanções sociais que pretendem submeter o indivíduo a modelos e normas comunitários, passando pela instância da sociedade civil (família, escola, profissão, opinião pública e grupos de pressão), bem como pela instância estatal, por meio da atuação da polícia, da justiça, do Ministério Público, da administração penitenciária e de todos os efeitos que emanam dessas agências. A definição apresentada refere-se à (ao)</h4>
+      <label><input type="radio" name="qcfs3" value="A"> norma penal.</label> 
+      <label><input type="radio" name="qcfs3" value="B"> controle social.</label> 
+      <label><input type="radio" name="qcfs3" value="C"> delinquente.</label> 
+      <label><input type="radio" name="qcfs3" value="D"> vítima.</label> 
+      <label><input type="radio" name="qcfs3" value="E"> delito.</label> 
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="B">
+      <h4>4. (IADES) Assinale a alternativa que indica objetos da criminologia.</h4>
+      <label><input type="radio" name="qcfs4" value="A"> Delinquência infanto-juvenil, delinquente, vítima e interdisciplinaridade.</label> 
+      <label><input type="radio" name="qcfs4" value="B"> Delito, delinquente, vítima e controle social.</label> 
+      <label><input type="radio" name="qcfs4" value="C"> Delito, delinquente, empiria e interdisciplinaridade.</label> 
+      <label><input type="radio" name="qcfs4" value="D"> Empiria, interdisciplinaridade, vítima e controle social.</label> 
+      <label><input type="radio" name="qcfs4" value="E"> Delito, delinquente, vítima e controle moral.</label> 
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+    <div class="questao" data-resposta="D">
+      <h4>5. (IADES) Assinale a alternativa que apresenta funções da criminologia.</h4>
+      <label><input type="radio" name="qcfs5" value="A"> Explicar o crime e definir as medidas de combate à criminalidade que serão impostas ao Poder Executivo, ao Comando da Polícia Militar e à Secretaria de Segurança Pública.</label> 
+      <label><input type="radio" name="qcfs5" value="B"> Avaliar os diferentes modelos de resposta ao crime e criar tipos penais, bem como hipóteses de aumento ou de diminuição das penas em abstrato.</label> 
+      <label><input type="radio" name="qcfs5" value="C"> Explicar o crime, preveni-lo e criar tipos penais, auxiliando o Poder Legislativo no trâmite de medidas provisórias dessa natureza.</label> 
+      <label><input type="radio" name="qcfs5" value="D"> Avaliar os diferentes modelos de resposta ao crime, explicar o crime e prevenir o crime.</label> 
+      <label><input type="radio" name="qcfs5" value="E"> Intervir na pessoa do infrator e auxiliar o Poder Judiciário na aplicação das normas por meio de pareceres nos processos criminais em curso.</label> 
+      <button class="verificar" onclick="verificarIndividual(this)">Verificar</button>
+    </div>
+    
+
+    <div class="resultado"></div>
+    <button class="verificar" onclick="verificarRespostas('crimecomofatosocial')">Verificar todas</button>
   </div>
 
   <div id="organizacaoadministrativa" class="questoes">
